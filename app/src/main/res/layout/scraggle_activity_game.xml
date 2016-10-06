@@ -1,0 +1,68 @@
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband4 for more book information.
+-->
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".TicTacToeActivity">
+
+   <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:background="@color/white_color"/>
+
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+
+       <TextView
+
+           android:id="@+id/title"
+           android:layout_width= "match_parent"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:textAppearanceLarge"
+           android:textSize="@dimen/button_textsize"
+           android:textColor="@color/white_color"
+           android:text="@string/stage1"
+           android:layout_margin="@dimen/activity_vertical_margin"
+           android:background="@color/black_color"/>
+
+      <TextView
+          android:id="@+id/timer"
+          android:layout_width= "wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:textAppearanceLarge"
+          android:textSize="@dimen/button_textsize"
+          android:textColor="@color/black_color"
+          android:layout_margin="@dimen/activity_vertical_margin"/>
+
+      <fragment
+         android:id="@+id/fragment_game"
+         class="edu.neu.madcourse.mayankranjandayal.scraggle.GameFragment"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         tools:layout="@layout/scraggle_fragment_game"/>
+      <!-- Control fragment goes here... -->
+
+      <fragment
+         android:id="@+id/fragment_game_controls"
+         class="edu.neu.madcourse.mayankranjandayal.scraggle.ControlFragment"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         tools:layout="@layout/scraggle_fragment_control"/>
+
+   </LinearLayout>
+
+   <include layout="@layout/scraggle_thinking"/>
+
+</FrameLayout>

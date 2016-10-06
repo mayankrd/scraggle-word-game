@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Scraggle</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_text">Mayank Ranjan Dayal</string>
+    <string name="aboutButton_label">About</string>
+    <string name="generateErrorButton_label">Generate Error</string>
+    <string name="ticTacToeButton_label">TicTacToe</string>
+    <string name="quitButton_label">Quit</string>
+    <string name="title_activity_display_about_details">About</string>
+    <string name="email">mayankrd@ccs.neu.edu</string>
+    <string name="yearInSchool">1st Year MS</string>
+    <string name="degreeProgram">MS Computer Science</string>
+    <string name="dictionaryButton_label">Dictionary</string>
+    <string name="clearButton_label">Clear</string>
+    <string name="returnToMenu_label">Return To Menu</string>
+    <string name="ack_label">Acknowledgement</string>
+    <string name="search_textBox">Enter word...</string>
+    <string name="wordGame_Button_label">Word Game</string>
+
+
+    <string name="long_app_name">Ultimate Tic Tac Toe</string>
+    <string name="restart_label">Restart</string>
+    <string name="main_menu_label">Main Menu</string>
+    <string name="declare_winner">%1$s is the winner</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_label">About</string>
+    <string name="ok_label">OK</string>
+    <string name="about_text">\
+This game is played just like
+regular Tic Tac Toe with one difference: to win a tile
+you have to win a smaller game of Tic Tac Toe inside that tile.\n\
+\n\
+A tie happens when there are no further moves.
+In the case of a tie in a small board, that will count as a win for
+both sides in the larger game.
+</string>
+    <string name="title_activity_test_dictionary">TestDictionary</string>
+    <string name="title_activity_acknowledgement">Acknowledgement</string>
+
+    <string name="scraggle_app_name">SCRAGGLE</string>
+    <string name="title_activity_stage2">Scraggle: Stage 2</string>
+    <string name="title_activity_summary">Game Summary</string>
+    <string name="game_over">GAME OVER !</string>
+    <string name="stage1">Scraggle: Stage 1</string>
+    <string name="stage2">Scraggle: Stage 2</string>
+    <string name="your_score">Your Score</string>
+    <string name="scraggle_about_text">\
+             HOW TO PLAY\n\
+    The goal is to find the longest words possible and most words.
+    The game has two stages.\n\
+    In stage 1, you need to play Boggle in each of the 3x3 blocks.
+    Click on "Check" button for submitting your word.\n\
+    Game moves to stage 2 after a duration of 1.5 mins.
+    In stage 2, pick one letter from each quadrant. You can revisit grids for picking letters but not back to back.
+</string>
+
+        <string name="scraggle_about_text_2p">\
+             HOW TO PLAY\n\
+    The goal is to find the longest words possible and most words.
+    In 2-player game mode; the users play against each other.\n\
+    Both the users will be shown with the same set of words and the target is to gain maximum points.
+    In stage 1, you need to play Boggle in each of the 3x3 blocks.
+    Click on "Check" button for submitting your word.\n\
+    Game moves to stage 2 after a duration of 1.5 mins.
+    In stage 2, pick one letter from each quadrant. You can revisit grids for picking letters but not back to back.
+</string>
+    <string name="title_activity_stage1">Stage1</string>
+    <string name="scraggle_game_paused">Game Paused !</string>
+    <string name="scraggle_resume_label">Resume Game</string>
+    <string name="title_activity_communication">Communication</string>
+    <string name="title_activity_single_player_home">single_player_home</string>
+
+    <string name="register">Register</string>
+    <string name="unregister">Unregister</string>
+    <string name="clear_label">Clear</string>
+    <string name="title_activity_two_player_word_game_home">Two Player Word Game</string>
+    <string name="title_activity_two_player_home">TwoPlayerHome</string>
+    <string name="title_activity_two_player_stage1">TwoPlayerStage1</string>
+    <string name="title_activity_two_player_user_selection">TwoPlayerUserSelection</string>
+    <string name="title_activity_two_player_stage2">TwoPlayerStage2</string>
+    <string name="title_activity_two_player_summary">TwoPlayerSummary</string>
+    <string name="title_activity_trickiest_part">Trickiest Part</string>
+    <string name="title_activity_burpee_count">BurpeeCount</string>
+
+    <string name="facebook_app_id">1522549164720204</string>
+
+    <string name="title_activity_burpee_screnn_2">Burpee_screnn_2</string>
+    <string name="title_activity_burpee_summary_screen">Burpee_summary_screen</string>
+    <string name="title_activity_burpee_main">BurpeeMainActivity</string>
+    <string name="title_activity_burpee_ack">BurpeeAck</string>
+
+    <string name="burpee_app_name">MAD16S-BurpeeChallenge</string>
+
+</resources>

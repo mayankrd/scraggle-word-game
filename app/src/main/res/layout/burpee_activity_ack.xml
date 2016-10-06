@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#616161"
+    tools:context="edu.neu.madcourse.mayankranjandayal.BurpeeAck">
+
+
+
+    <include
+        layout="@layout/burpee_header_layout"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tutorial_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acknowledgement"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_below="@+id/header"
+        style="@style/TextViewStyle_Burpee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="IMAGE RESOURCE"
+        android:id="@+id/textView5"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- http://www.shutterstock.com"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="TECHNICAL HELP"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- http://developer.android.com"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- http://stackoverflow.com/questions"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- http://android.stackexchange.com"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SPECIAL THANKS TO"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Dharam and Deryl"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="for technical troubleshooting"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Prof. Stephen Intille"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="for great instructions and design reviews"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="MODELS APP TESTED ON"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="30sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Kyocera Rise"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Moto G"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Google Nexus 5 X"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Google Nexus 6"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="- Google Nexus 6 P"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10sp"
+        android:textColor="@color/white_color"/>
+
+
+
+</LinearLayout>
+</ScrollView>

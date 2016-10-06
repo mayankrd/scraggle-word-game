@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context="edu.neu.madcourse.mayankranjandayal.two_player_word_game.two_player.TwoPlayerHome">
+    android:screenOrientation="portrait">
+
+    <edu.neu.madcourse.mayankranjandayal.scraggle.ScrollingView
+        android:id="@+id/main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:scrollingDrawable="@drawable/scraggle_xando_background"/>
+
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/button_textsize"
+        android:textColor="@color/white_color"
+        android:text="Two Player Word Game"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/black_color"/>
+
+
+    <include
+        layout="@layout/two_player_layout_home_2p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
+

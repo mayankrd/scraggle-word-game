@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:padding="@dimen/scraggle_control_padding"
+tools:context=".GameActivity"
+android:screenOrientation="portrait">
+
+    <ToggleButton
+        android:id="@+id/sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_low"
+        android:textOff="Music On"
+        android:textOn="Music Off"
+        android:checked="true"
+        />
+<Button
+    android:id="@+id/button_pause"
+    android:layout_width="55sp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/scraggle_pause"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/sound"
+    android:layout_toStartOf="@+id/button_restart"
+    android:onClick="pauseGame"/>
+
+<Button
+    android:id="@+id/button_restart"
+    android:layout_width="50sp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/scraggle_restart"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/button_main"
+    android:layout_toStartOf="@+id/button_main"
+    android:onClick="restartGame"/>
+
+<Button
+    android:id="@+id/button_main"
+    android:layout_width="50sp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/scraggle_home"
+    android:layout_alignParentTop="true"
+    android:layout_toLeftOf="@+id/button_check"
+    android:layout_toStartOf="@+id/button_check"
+    android:onClick="showHome"/>
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:id="@+id/button_check"
+    android:src="@drawable/check"
+    android:background="@color/black_color"
+    android:layout_alignBottom="@+id/button_main"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:onClick="checkWord"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/scraggle_control_padding"
+    tools:context=".GameActivity"
+    android:screenOrientation="portrait">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/button_textsize"
+        android:textColor="@color/black_color"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:hint="timer"
+        android:layout_toRightOf="@+id/points"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/button_textsize"
+        android:textColor="@color/black_color"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:hint="points"
+        android:layout_alignParentRight="true"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:stretchColumns="*"
+        android:layout_below="@+id/points">
+        <TableRow>
+
+            <TextView
+
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="@dimen/button_textsize"
+                android:textColor="@color/black_color"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="Opponent Points:"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/opoints"
+                android:layout_width= "wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="@dimen/button_textsize"
+                android:textColor="@color/black_color"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:hint=""
+                android:layout_alignParentRight="true"/>
+
+        </TableRow>
+    </TableLayout>
+
+    </RelativeLayout>

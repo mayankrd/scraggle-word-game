@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.mayankranjandayal" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <permission
+        android:name="edu.neu.madcourse.mayankranjandayal.tobedeleted.two_player.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="edu.neu.madcourse.mayankranjandayal.communication.two_player.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <receiver
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.two_player.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="edu.neu.madcourse.mayankranjandayal.communication.two_player" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.two_player.GcmIntentService" />
+
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.ScraggleHome"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeScreenZero"
+            android:icon="@drawable/burpee_icon"
+            android:label="@string/burpee_app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.DisplayAboutDetailsActivity"
+            android:label="@string/title_activity_display_about_details"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+
+        <!-- activity for tictactoe program -->
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.tictactoe.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+        <activity android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.tictactoe.GameActivity" />
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.dictionary.TestDictionary"
+            android:label="@string/title_activity_test_dictionary"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.Acknowledgement"
+            android:label="@string/title_activity_acknowledgement"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.dictionary.TestDictionary" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.dictionary.TestDictionary" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.Stage2"
+            android:label="@string/title_activity_stage2"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.GameActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.GameActivity" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.Summary"
+            android:label="@string/title_activity_summary"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.Stage2"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.Stage2" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.Stage1"
+            android:label="@string/title_activity_stage1"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.scraggle.MainActivity" />
+        </activity>
+        <!--
+        <activity
+            android:name=".scraggle.ScraggleHome"
+            android:label="@string/title_activity_scraggle_main"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.scraggle.mayankranjandayalnkranjandayal.MainActivity" />
+        </activity>
+        -->
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.Communication"
+            android:label="@string/title_activity_communication"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.single_player_home"
+            android:label="@string/title_activity_single_player_home"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.Communication" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.Communication" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.Stage1"
+            android:label="@string/stage1"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.single_player_home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.single_player_home" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.Stage2"
+            android:label="@string/stage1"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.single_player_home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.single_player_home" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.Summary"
+            android:label="@string/title_activity_summary"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.Stage2"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.single_player.Stage2" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.two_player.CommunicationMain"
+            android:label="@string/app_name"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.Communication" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.communication.Communication" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.twoPlayerWordGameHome"
+            android:label="@string/title_activity_two_player_word_game_home"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerHome"
+            android:label="@string/title_activity_two_player_home"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.twoPlayerWordGameHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.twoPlayerWordGameHome" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerUserSelection"
+            android:label="@string/title_activity_two_player_user_selection"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerHome" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerStage1"
+            android:label="@string/title_activity_two_player_stage1"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerUserSelection" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerUserSelection" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerStage2"
+            android:label="@string/title_activity_two_player_stage2"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerHome" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerSummary"
+            android:label="@string/title_activity_two_player_summary"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerStage2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.two_player_word_game.two_player.TwoPlayerStage2" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.trickiestPart.TrickiestPartActivity"
+            android:label="@string/title_activity_trickiest_part"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeCount"
+            android:label="@string/title_activity_burpee_count"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1612665719058375"
+            android:exported="true" />
+
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeGetSet"
+            android:label="@string/title_activity_burpee_screnn_2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeTutorial"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeSummary"
+            android:label="@string/title_activity_burpee_summary_screen"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeCount"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.finalProject.BurpeeCount" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.BurpeeMainActivity"
+            android:label="@string/title_activity_burpee_main"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.mayank.finalapp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.com.scraggle.mayankranjandayal.BurpeeAck"
+            android:label="@string/title_activity_burpee_ack"
+            android:parentActivityName="edu.neu.madcourse.com.scraggle.mayankranjandayal.BurpeeMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.neu.madcourse.com.scraggle.mayankranjandayal.BurpeeMainActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.neu.madcourse.mayankranjandayal.Acknowledgement"
+    android:orientation="vertical">
+
+
+
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/button_textsize"
+        android:textColor="@color/white_color"
+        android:text="@string/title_text"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/black_color"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black_color"
+        android:text="ACKNOWLEDGEMENT"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black_color"
+        android:text="Some of the informative websites were:"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black_color"
+        android:text="- http://stackoverflow.com/tags/android/info"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black_color"
+        android:text="- http://developer.android.com/training"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black_color"
+        android:text="- http://www.tutorialspoint.com/android/"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/black_color"
+        android:text=" - Used TicTacToe game source code for basic layout of word game present at https://pragprog.com/titles/eband4/source_code"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+</LinearLayout>

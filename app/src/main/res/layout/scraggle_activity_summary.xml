@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.madcourse.mayankranjandayal.scraggle.Summary"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:id="@+id/title"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/button_textsize"
+        android:textColor="@color/white_color"
+        android:text="@string/title_activity_summary"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:background="@color/black_color"/>
+
+    <TextView
+
+        android:id="@+id/gameOver_tv"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/textview_size"
+        android:textColor="@color/black_color"
+        android:text="@string/game_over"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"/>
+
+    <TextView
+
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="@dimen/menu_text_size"
+        android:textColor="@color/black_color"
+        android:text="@string/your_score"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"/>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        android:paddingTop="12dp">
+
+    <TableRow android:paddingTop="20dp">
+        <TextView
+            android:text="Points:"
+            android:padding="3dip" />
+        <TextView
+            android:id="@+id/points"
+            android:text="100 "
+            android:gravity="right"
+            android:padding="3dip" />
+    </TableRow>
+
+    <TableRow android:paddingTop="20dp">
+            <TextView
+
+                android:text="Total Nine Length Words:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/nineWords"
+                android:text="100 "
+                android:gravity="right"
+                android:padding="3dip" />
+    </TableRow>
+
+        <TableRow android:paddingTop="20dp">
+            <TextView
+
+                android:text="Bonus Points:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/bonusPoints"
+                android:text="100 "
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+    <TableRow android:paddingTop="20dp">
+            <TextView
+                android:text="TOTAL SCORE:"
+                android:padding="3dip" />
+            <TextView
+                android:id="@+id/totalScore"
+                android:text="100 "
+                android:gravity="right"
+                android:padding="3dip" />
+    </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

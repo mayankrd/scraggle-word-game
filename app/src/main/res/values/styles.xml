@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme"
+        parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+    <style name="TileButton">
+      <item name="android:layout_width">@dimen/tile_size</item>
+      <item name="android:layout_height">@dimen/tile_size</item>
+      <item name="android:layout_margin">@dimen/tile_margin</item>
+      <item name="android:background">#00000000</item>
+      <item name="android:padding">@dimen/tile_padding</item>
+      <item name="android:scaleType">centerCrop</item>
+      <item name="android:src">@drawable/tile</item>
+   </style>
+
+    <style name="ScraggleTileButton">
+        <item name="android:layout_width">@dimen/scraggle_tile_size</item>
+        <item name="android:layout_height">@dimen/scraggle_tile_size</item>
+        <item name="android:layout_margin">@dimen/tile_margin</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:padding">@dimen/tile_padding</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/tile</item>
+        <item name="android:textColor">@color/white_color</item>
+    </style>
+
+    <style name="ButtonStyle">
+
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:background">@color/lightBlack_color</item>
+        <item name="android:layout_margin">@dimen/activity_vertical_margin</item>
+        <item name="android:textSize">@dimen/textview_size</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+
+    </style>
+
+    <style name="ButtonStyle_Dictionary">
+
+        <item name="android:textColor">@color/white_color</item>
+        <item name="android:background">@color/lightBlack_color</item>
+        <item name="android:layout_margin">@dimen/activity_vertical_margin</item>
+        <item name="android:textSize">@dimen/button_textsize</item>
+        <item name="android:layout_width">@dimen/button_width</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+
+    </style>
+
+    <style name="ButtonStyle_Burpee">
+        <item name="android:textColor">#616161</item>
+        <item name="android:background">#D4E157</item>
+    </style>
+
+    <style name="BackgroundStyle_Burpee">
+        <item name="android:background">#616161</item>
+    </style>
+
+    <style name="TextViewStyle_Burpee">
+        <item name="android:textColor">#D4E157</item>
+    </style>
+
+
+</resources>
